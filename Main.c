@@ -21,6 +21,7 @@ int main() {
 		int dadep = 1 + rand() % 10;
 
 		if (Balance <= 0) {
+			Beep(500, 200);
 			fprintf(stdout, "Ты обанкротился...");
 
 			return;
@@ -58,6 +59,7 @@ int main() {
 
 		if (Balance >= 5000) {
 			printf("о черт ты выиграл!");
+			Beep(500, 200);
 
 			Sleep(5000);
 			iswin = false;
