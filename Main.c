@@ -35,6 +35,12 @@ int main() {
 		fprintf(stdout, "скока ты поставишь своих кровных? : ");
 		scanf_s("%d", &bablo);
 
+	    if (bablo == 0) {
+			printf("так незя братан");
+			Sleep(5000);
+			continue;
+		}
+
 		if (bablo > Balance) {
 			fprintf(stdout, "на вашем киви кошельке не достачечно мани мани бро\n");
 			continue;
@@ -50,6 +56,9 @@ int main() {
 			fprintf(stdout, "емае мой велосипед ты угадал да ну нафег");
 			Sleep(5000);
 			Balance += (bablo * 2);
+		}
+		else if (user_input == 0) {
+			printf("так незя братан");
 		}
 		else {
 
